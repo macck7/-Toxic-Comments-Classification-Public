@@ -23,16 +23,16 @@ The training dataset consists of 159k training samples and the test set consists
 On analyzing the dataset I found that most of the comments are completely *clean* ,i.e., there is no toxicity present in them.
 Out of all the comments in the training dataset, on counting the number of comments that fall under each class turn out to be the following:
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/count_of_each_class.jpg)
+![image](https://raw.githubusercontent.com/macck7/-Toxic-Comments-Classification-Public/main/images/count_of_each_class.jpg)
 
 Plotting the same as a bar-chart:
 
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/barChart_count_of_each_class_.png)
+![image](https://raw.githubusercontent.com/macck7/-Toxic-Comments-Classification-Public/main/images/barChart_count_of_each_class_.png)
 
 
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/Percentage_comments_of_all_categories.png)
+![image](https://raw.githubusercontent.com/macck7/Toxic-Comments-Classification/master/images/Percentage_comments_of_all_categories.png)
 
 For preprocessing the data we did the following:
 * Firstly, we remove the English Stopwords from every comment using the **_nltk_** library.
@@ -44,7 +44,7 @@ For preprocessing the data we did the following:
 #### Create WordCloud: 
 Useful to show the words which occur most frequently for each category. Warning: Profanity ahead.
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/word_cloud.png)
+![image](https://raw.githubusercontent.com/macck7/Toxic-Comments-Classification/master/images/word_cloud.png)
 
 ### TF-IDF for feature extraction
 TF-IDF stands for “Term Frequency — Inverse Document Frequency”. This is a technique to quantify words in a set of documents. We generally compute a score for each word to signify its importance in the document and corpus. It is one of the most important techniques used for information retrieval to represent how important a specific word or phrase is to a given document.
@@ -62,7 +62,7 @@ Logistic regression uses functions called the logit functions,that helps derive 
 
 **Multinomial Naive Bayes** : A Naive Bayes classifier is a probabilistic machine learning model that’s used for classification task. The crux of the classifier is based on the Bayes theorem. Using Bayes theorem, we can find the probability of _A_ happening, given that _B_ has occurred. Here, _B_ is the evidence and _A_ is the hypothesis. The assumption made here is that the predictors/features are independent. That is presence of one particular feature does not affect the other. Hence it is called naive.
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/bayes_theorem.png)
+![image](https://raw.githubusercontent.com/macck7/Toxic-Comments-Classification/master/images/bayes_theorem.png)
 
 Types of Naive Bayes Classifier:
 
@@ -75,10 +75,10 @@ This is similar to the multinomial naive bayes but the predictors are boolean va
 ### Evaluation Metric :
 The F-score or F-measure is a measure of a test's accuracy. It is calculated from the precision and recall of the test, where the precision is the number of true positive results divided by the number of all positive results, including those not identified correctly, and the recall is the number of true positive results divided by the number of all samples that should have been identified as positive. Precision is also known as positive predictive value, and recall is also known as sensitivity in diagnostic binary classification.
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/f1_score.jpg)
+![image](https://raw.githubusercontent.com/macck7/Toxic-Comments-Classification/master/images/f1_score.jpg)
 
 ## Results :
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/result_1.png)
+![image](https://raw.githubusercontent.com/macck7/Toxic-Comments-Classification/master/images/result_1.png)
 
-![image](https://raw.githubusercontent.com/gauravgupta916/Toxic-Comments-Classification/master/images/result_2.png)
+![image](https://raw.githubusercontent.com/macck7/Toxic-Comments-Classification/master/images/result_2.png)
